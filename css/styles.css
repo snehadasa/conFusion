@@ -13,10 +13,6 @@
   margin: 0px auto;
   padding: 20px 0px; }
 
-.modal {
-    color: black;
-}
-
 .jumbotron {
   margin: 0px auto;
   padding: 70px 30px;
@@ -56,3 +52,16 @@ body {
   position: absolute;
   bottom: 0px;
   z-index: 1; }
+
+.modal {
+  color: #0f0f0f;
+} 
+
+.modal .close {
+  color: floralwhite; }
+
+.modal .modal-header {
+  background-color: #512DA8; }
+
+.modal .modal-body {
+  background-color: #D1C4E9; }

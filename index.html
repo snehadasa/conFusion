@@ -35,7 +35,7 @@
                 </ul>
 
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <a id="loginButton">
                         <span class="fa fa-sign-in"></span>Login
                     </a>
                 </span>
@@ -98,7 +98,7 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>              
 
-                <button type="button" class="btn btn-warning btn-lg align-self-center" data-toggle="modal" data-target="#reserveModal">
+                <button type="button" class="btn btn-warning btn-lg align-self-center" onclick="$('#reserveModal').modal('show')">
                     Reserve Table
                   </button>
 
@@ -130,7 +130,7 @@
                                                 <label class="form-check-label" for="inlineRadio2">2</label>
                                             </div>
                                             <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                <input class="form-check-input active" type="radio" name="inlineRadioOptions"
                                                     id="inlineRadio3" value="option3">
                                                 <label class="form-check-label" for="inlineRadio3">3</label>
                                             </div>
@@ -374,6 +374,13 @@
                         $('#carouselButton').children('span').removeClass('fa-play');
                         $('#carouselButton').children('span').addClass('fa-pause');
                     }
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+                $('#loginButton').click(function() {
+                    $("#loginModal").modal('show');
                 });
             });
         </script>
